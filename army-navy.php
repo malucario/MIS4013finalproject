@@ -13,7 +13,7 @@ Include "view-header.php";
 <h3>Prediction</h3>
 <p>Despite the high of winning a conference championship last week and the announcement of a bowl game to be played later this month, Army's laser focus on Navy hasn't changed. I predict Army to win and cover and for the battle at the line of scrimmage to be the key point of emphasis for a win.</p>
 
-<h4><br>In addition to the product on the field, this rivalry also always produces an awesome uniform battle.</h4>
+<h4><br><br>In addition to the product on the field, this rivalry also always produces an awesome uniform battle.</h4>
 <p><a href="army-uni-video.php">Click here to learn the story of Army's 101st Airborn Division-inspired uniforms.</a></p>
 <p><a href="navy-uni-video.php">Click here to learn the story of Navy's Jolly Roger uniforms.</a></p>
 
