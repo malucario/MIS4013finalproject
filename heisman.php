@@ -41,7 +41,7 @@ Include "view-header.php"
   <img src="https://www.registerguard.com/gcdn/authoring/authoring-images/2024/09/14/NREG/75227422007-bb-3-i-9691.jpg?width=1733&height=1156&fit=crop&format=pjpg&auto=webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Dillon Gabriel</h5>
-    <p class="card-text">Gabriel has thrived under the spotlight, leading his team to a #1 national ranking in their first season in the Big Ten. Gabriel earned Big Ten Offensive Player of the Year honors by throwing for over 4,200 yards and 38 touchdowns while adding another 500 yards and 6 scores on the ground. His pinpoint accuracy (70% completion rate) and poise under pressure have been instrumental in dismantling elite defenses and securing the top seed. Gabriel’s leadership, efficiency, and role in a seamless conference transition cement his case as the best player in college football this season.</p>
+    <p class="card-text">Gabriel has thrived under the spotlight, leading his team to a #1 national ranking in their first season in the Big Ten. He earned Big Ten Offensive Player of the Year honors by throwing for over 4,200 yards and 38 touchdowns while adding another 500 yards and 6 scores on the ground. His pinpoint accuracy (70% completion rate) and poise under pressure have been instrumental in dismantling elite defenses and securing the top seed. Gabriel’s leadership, efficiency, and role in a seamless conference transition cement his case as the best player in college football this season.</p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">HT/WT: 6'0", 200 lbs</li>
