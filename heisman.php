@@ -2,6 +2,7 @@
 Include "view-header.php"
 ?>
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
 <div class="card" style="width: 18rem;">
   <img src="https://www.denverpost.com/wp-content/uploads/2024/10/TDP-Z-CU.jpg?w=525" class="card-img-top" alt="...">
   <div class="card-body">
@@ -68,6 +69,7 @@ Include "view-header.php"
     <a href="ward-stats.php" class="card-link">View stats</a>
     <a href="ward-highlights.php" class="card-link">View highlights</a>
   </div>
+</div>
 </div>
 
 <?php
