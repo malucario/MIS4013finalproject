@@ -21,7 +21,7 @@ Include "view-header.php"
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://external-preview.redd.it/ashton-jeanty-sets-boise-state-single-season-rushing-record-v0-roW5KbEXoyd9PVFtLhsgjJaLfJ5m3gRcl-Kif7GQIb4.jpg?width=640&crop=smart&auto=webp&s=54f8082b3d11eb5cd8dc2cf6ccc46621b186a9c5" class="card-img-top" alt="...">
+  <img src="https://athlonsports.com/.image/t_share/MjEwMDUzMjUzMzg2MjE2ODI2/usatsi_24356855.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Ashton Jeanty</h5>
     <p class="card-text">Jeanty has captivated the college football world with one of the greatest rushing seasons in history. Jeanty has already surpassed Jay Ajayi's 2014 Boise State record for single-season rushing yards and is on pace to break Barry Sanders' legendary NCAA record of 2,628 rushing yards set in 1988. Currently, Jeanty has amassed over 2,400 rushing yards and 28 touchdowns, averaging an incredible 8.3 yards per carry. His explosiveness has powered Boise State to an unprecedented level, securing a first-round bye in the playoffs. Jeanty’s dominance on the ground and ability to carry his team in high-pressure situations make him a strong Heisman contender.</p>
