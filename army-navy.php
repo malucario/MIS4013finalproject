@@ -1,5 +1,5 @@
 <?php
-Include "view-header.php"
+Include "view-header.php";
 ?>
 
 <h1>The 125th Army-Navy Game will feature something the rivalry has never seen before - a conference champion.</h1>
@@ -19,5 +19,5 @@ Include "view-header.php"
 <p><a href="navy-uni-video.php">Click here to learn the story of Navy's Jolly Roger uniforms.</a></p>
 
 <?php
-Include "view-footer.php"
+Include "view-footer.php";
 ?>
