@@ -2,6 +2,7 @@
 Include "view-header.php";
 ?>
 
+<body style="background-color: beige;">
 <h1>The 125th Army-Navy Game will feature something the rivalry has never seen before - a conference champion.</h1>
 <p>The annual Army-Navy game is one of the most storied rivalries in college football, steeped in tradition and intensity. This year’s matchup promises to deliver another classic battle, but all signs point to Army riding high after an exceptional season and poised to take home a convincing victory.</p>
 <h3>Momentum on Army’s Side</h3>
