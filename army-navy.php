@@ -2,7 +2,7 @@
 Include "view-header.php";
 ?>
 
-<h1>The 125th Army-Navy Game will feature something the rivalry has never seen before - a conference champion.</h1>
+<h1><strong>The 125th Army-Navy Game will feature something the rivalry has never seen before - a conference champion.</strong></h1>
 <p>The annual Army-Navy game is one of the most storied rivalries in college football, steeped in tradition and intensity. This year’s matchup promises to deliver another classic battle, but all signs point to Army riding high after an exceptional season and poised to take home a convincing victory.</p>
 <h3>Momentum on Army’s Side</h3>
 <p>Army enters the game fresh off a historic triumph, securing their first-ever conference championship with a dominant win in the Commander’s Classic last week. This victory not only solidifies their position as a rising force but also injects the team with unparalleled confidence heading into their biggest rivalry of the year. The Black Knights have shown they can rise to the occasion, and their momentum gives them a significant edge.</p>
