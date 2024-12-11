@@ -6,7 +6,7 @@ Include "view-header.php";
   <link href="https://youtu.be/izQF9wMq53E?si=sYvN9hqIkeuIdEGw" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
