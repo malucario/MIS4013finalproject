@@ -7,11 +7,8 @@ Include "view-header.php";
   <p> - The new 12-team College Football Playoff</p>
   <p> - The four Heisman finalists announced earlier this week.</p>
   <p> - The 125th edition of the historic Army-Navy rivalry.</p>
-  <p> </p>
-  <p>Use our navbar at the top to navigate and view our previews & predictions.</p>
-  <p> </p>
-  <p> </p>
-  <p>*"Articles" are written with the help of ChatGPT for the sake of time.</p>
+  <p><br>Use our navbar at the top to navigate and view our previews & predictions.<br></p>
+  <p><br>*"Articles" are written with the help of ChatGPT for the sake of time.</p>
  <?php
 Include "view-footer.php";
 ?>
