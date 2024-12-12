@@ -13,11 +13,11 @@ function selectHunterStats() {
     }
 }
 
-function insertHunterStats($hsHID, $hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU) {
+function insertHunterStats($hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-        $stmt->bind_param("issiiiiiiiiii", $hsHID, $hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU); 
+        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU) VALUES (1,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt->bind_param("ssiiiiiiiiii", $hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
