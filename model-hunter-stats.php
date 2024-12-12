@@ -58,7 +58,7 @@ function deleteHunterStats($hsGLID) {
 function selectHunterTotalStats() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT SUM(GLRushAtt) AS TotalHRushAtt, SUM(GLRushYds) AS TotalHRushYds, SUM(GLRushYds)/SUM(GLRushAtt) AS TotalHRushAvg, SUM(GLRushTDs) AS TotalHRushTDs, SUM(GLRec) AS TotalHRec, SUM(GLRecYds) AS TotalHRecYds, SUM(GLRecYds)/SUM(GLRec) AS TotalHRecAvg, SUM(GLRecTDs) AS TotalHRecTD, SUM(GLDefTack) AS TotalHDefTack, SUM(GLDefIn) AS TotalHDefInt, SUM(GLDefPBU) AS TotalHDefPBU FROM GameLog WHERE GLHeismanID=1");
+        $stmt = $conn->prepare("SELECT SUM(GLRushAtt) AS TotalHRushAtt, SUM(GLRushYds) AS TotalHRushYds, SUM(GLRushYds)/SUM(GLRushAtt) AS TotalHRushAvg, SUM(GLRushTDs) AS TotalHRushTDs, SUM(GLRec) AS TotalHRec, SUM(GLRecYds) AS TotalHRecYds, SUM(GLRecYds)/SUM(GLRec) AS TotalHRecAvg, SUM(GLRecTDs) AS TotalHRecTD, SUM(GLDefTack) AS TotalHDefTack, SUM(GLDefInt) AS TotalHDefInt, SUM(GLDefPBU) AS TotalHDefPBU FROM GameLog WHERE GLHeismanID=1");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
