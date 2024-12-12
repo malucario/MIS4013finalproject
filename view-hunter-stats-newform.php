@@ -22,7 +22,7 @@
           </div>
            <div class="mb-3">
             <label for="hsOpp" class="form-label">Opponent</label>
-            <input type="text" class="form-control" id="hsOpp" name="hsOPpp">
+            <input type="text" class="form-control" id="hsOpp" name="hsOpp">
           </div> 
           <div class="mb-3">
             <label for="hsRushAtt" class="form-label">Rush Attempts</label>
@@ -66,7 +66,7 @@
           </div> 
           <div class="mb-3">
             <label for="hsDefPBU" class="form-label">Pass Breakups</label>
-            <input type="number" class="form-control" id="hsDefPBU" name="hdDefPBU">
+            <input type="number" class="form-control" id="hsDefPBU" name="hsDefPBU">
           </div>
           <div class="mb-3">
           <input type="hidden" name="actionType" value="Add">
