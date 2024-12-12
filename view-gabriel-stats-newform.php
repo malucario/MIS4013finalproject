@@ -41,8 +41,8 @@
             <input type="number" class="form-control" id="gsPassYds" name="gsPassYds">
           </div>
           <div class="mb-3">
-            <label for="gsPassInt" class="form-label">Passing Interceptions</label>
-            <input type="number" class="form-control" id="gsPassInt" name="gsPassInt">
+            <label for="gsPassInts" class="form-label">Passing Interceptions</label>
+            <input type="number" class="form-control" id="gsPassInts" name="gsPassInts">
           </div>
           <div class="mb-3">
             <label for="gsPassRate" class="form-label">Passer Rating</label>
