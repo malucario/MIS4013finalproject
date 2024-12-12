@@ -13,11 +13,11 @@ function selectGabrielStats() {
     }
 }
 
-function insertGabrielStats($gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs) {
+function insertGabrielStats($gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLPassComps, GLPassAtt, GLCompPct, GLPassYds, GLPassTDs, GLPassInts, GLPassRate, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, ) VALUES (3,?,?,?,?,?,?,?,?,?,?,?,?)");
-        $stmt->bind_param("ssiiiiiiiiii", $gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs); 
+        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLPassComps, GLPassAtt, GLCompPct, GLPassYds, GLPassTDs, GLPassInts, GLPassRate, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, ) VALUES (3,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt->bind_param("ssiiiiiiiiiii", $gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -31,7 +31,7 @@ function updateGabrielStats($gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $g
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE GameLog SET GLPassComps=?, GLPassAtt=?, GLCompPct=?, GLCompPct, GLPassTDs=?, GLPassInt=?, GLPassRate=?, GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=? WHERE GLID=?");
-        $stmt->bind_param("iiiiiiiiiii", $gsPassComps, $gsPassAtt, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs, $gsGLID); 
+        $stmt->bind_param("iiiiiiiiiiii", $gsPassComps, $gsPassAtt, $gsPassYds, $gsCompPct, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs, $gsGLID); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
