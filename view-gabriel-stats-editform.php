@@ -37,8 +37,8 @@
             <input type="number" class="form-control" id="gsPassTDs<?php echo $ggamelog['GLPassTDs'];?>" name="gsPassTDs" value="<?php echo $ggamelog['GLPassTDs'];?>">
           </div>
           <div class="mb-3">
-            <label for="gsPassInts<?php echo $ggamelog['GLPassIntss'];?>" class="form-label">Passing Interceptions</label>
-            <input type="number" class="form-control" id="gsPassIntss<?php echo $ggamelog['GLPassIntss'];?>" name="gsPassIntss" value="<?php echo $ggamelog['GLPassIntss'];?>">
+            <label for="gsPassInts<?php echo $ggamelog['GLPassInts'];?>" class="form-label">Passing Interceptions</label>
+            <input type="number" class="form-control" id="gsPassInts<?php echo $ggamelog['GLPassInts'];?>" name="gsPassInts" value="<?php echo $ggamelog['GLPassInts'];?>">
           </div>
           <div class="mb-3">
             <label for="gsPassRate<?php echo $ggamelog['GLPassRate'];?>" class="form-label">Passer Rating</label>
