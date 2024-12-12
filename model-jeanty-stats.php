@@ -16,7 +16,7 @@ function selectJeantyStats() {
 function insertJeantyStats($jsDate, $jsOpp, $jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs) VALUES (2,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs) VALUES (2,?,?,?,?,?,?,?,?,?,?)");
         $stmt->bind_param("ssiiiiiiii", $jsDate, $jsOpp, $jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs); 
         $success = $stmt->execute();
         $conn->close();
