@@ -13,12 +13,11 @@ function selectHunterStats() {
     }
 }
 
-//Working here!!!
-function insertHunterStats($hsHID, $hsDate, $hsOpp, $, ) {
+function insertHunterStats($hsHID, $hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLPassComps, GLPassAtt, GLCompPct, GLPassYds, GLPassTDs, GLPassInts, GLPassRate, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-        $stmt->bind_param("iiiidd", $stID, $stPID, $stPA, $stAB, $stOPS, $stEV); 
+        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt->bind_param("issiiiiiiiiii", $hsHID, $hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -28,11 +27,11 @@ function insertHunterStats($hsHID, $hsDate, $hsOpp, $, ) {
     }
 }
 
-function updateHunterStats($stPA, $stAB, $stOPS, $stEV, $hsGLID) {
+function updateHunterStats($hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU, $hsGLID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE Stats SET PA=?, AB=?, OPS=?, ExitVelo=? WHERE StatsID=?");
-        $stmt->bind_param("iiddi", $stPA, $stAB, $stOPS, $stEV, $stID); 
+        $stmt = $conn->prepare("UPDATE GameLog SET GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=?, GLRec=?, GLRecYds=?, GLRecAvg=?, GLRecTDs=?, GLDefTack=?, GLDefInt=?, GLDefPBU==? WHERE GLID=?");
+        $stmt->bind_param("iiiiiiiiiii", $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU, $hsGLID); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
