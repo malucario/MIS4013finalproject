@@ -30,7 +30,7 @@ function insertHunterStats($hsDate, $hsOpp, $hsRushAtt, $hsRushYds, $hsRushAvg, 
 function updateHunterStats($hsRushAtt, $hsRushYds, $hsRushAvg, $hsRushTDs, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU, $hsGLID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE GameLog SET GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=?, GLRec=?, GLRecYds=?, GLRecAvg=?, GLRecTDs=?, GLDefTack=?, GLDefInt=?, GLDefPBU==? WHERE GLID=?");
+        $stmt = $conn->prepare("UPDATE GameLog SET GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=?, GLRec=?, GLRecYds=?, GLRecAvg=?, GLRecTDs=?, GLDefTack=?, GLDefInt=?, GLDefPBU=? WHERE GLID=?");
         $stmt->bind_param("iiiiiiiiiiii", $hsRushAtt, $hsRushYds, $hsRushAvg, $hsRushTDs, $hsRec, $hsRecYds, $hsRecAvg, $hsRecTDs, $hsDefTack, $hsDefInt, $hsDefPBU, $hsGLID); 
         $success = $stmt->execute();
         $conn->close();
