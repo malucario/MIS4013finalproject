@@ -58,7 +58,7 @@ function deleteGabrielStats($gsGLID) {
 function selectGabrielTotalStats() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT SUM(GLPassComps) AS TotalGPassComps, SUM(GLPassAtt) AS TotalGPassAtt, ROUND((SUM(GLPassComps)/SUM(GLPassAtt))*100) AS TotalGCompPct, SUM(GLPassTDs) AS TotalGPassTDs, SUM(GLPassInt) AS TotalGPassInt, AVG(GLPassRate) AS TotalGPassRate, SUM(GLRushAtt) AS TotalGRushAtt, SUM(GLRushYds) AS TotalGRushYds, ROUND(SUM(GLRushYds)/SUM(GLRushAtt),1) AS TotalGRushAvg, SUM(GLRushTDs) AS TotalGRushTDs FROM GameLog WHERE GLHeismanID=3");
+        $stmt = $conn->prepare("SELECT SUM(GLPassComps) AS TotalGPassComps, SUM(GLPassAtt) AS TotalGPassAtt, ROUND((SUM(GLPassComps)/SUM(GLPassAtt))*100) AS TotalGCompPct, SUM(GLPassYds) AS TotalGPassYds, SUM(GLPassTDs) AS TotalGPassTDs, SUM(GLPassInt) AS TotalGPassInt, AVG(GLPassRate) AS TotalGPassRate, SUM(GLRushAtt) AS TotalGRushAtt, SUM(GLRushYds) AS TotalGRushYds, ROUND(SUM(GLRushYds)/SUM(GLRushAtt),1) AS TotalGRushAvg, SUM(GLRushTDs) AS TotalGRushTDs FROM GameLog WHERE GLHeismanID=3");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
