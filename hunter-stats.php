@@ -34,6 +34,7 @@ if (isset($_POST['actionType'])) {
 
 
 $hgamelogs = selectHunterStats();
+$htotals = selectHunterTotalStats();
 include "view-hunter-stats.php";
 Include "view-footer.php";
 ?>
