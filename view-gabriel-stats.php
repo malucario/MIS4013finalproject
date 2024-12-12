@@ -21,6 +21,7 @@
         <th>PassAtt</th>
         <th>CompPct</th>
         <th>PassYds</th>
+        <th>PassTDs</th>
         <th>PassInt</th>
         <th>RushRate</th>
         <th>RushAtt</th>
@@ -44,7 +45,7 @@ while ($ggamelog=$ggamelogs->fetch_assoc()) {
     <td><?php echo $ggamelog['GLCompPct']; ?></td>
     <td><?php echo $ggamelog['GLPassYds']; ?></td>
     <td><?php echo $ggamelog['GLPassTDs']; ?></td>
-    <td><?php echo $ggamelog['GLPassInt']; ?></td>
+    <td><?php echo $ggamelog['GLPassInts']; ?></td>
     <td><?php echo $ggamelog['GLPassRate']; ?></td>
     <td><?php echo $ggamelog['GLRushAtt']; ?></td>
     <td><?php echo $ggamelog['GLRushYds']; ?></td>
@@ -85,6 +86,7 @@ Include "view-gabriel-stats-editform.php";
         <th>PassAtt</th>
         <th>CompPct</th>
         <th>PassYds</th>
+        <th>PassTDs</th>
         <th>PassInt</th>
         <th>RushRate</th>
         <th>RushAtt</th>
@@ -103,7 +105,7 @@ while ($gtotal=$gtotals->fetch_assoc()) {
     <td><?php echo $gtotal['TotalGCompPct']; ?></td>
     <td><?php echo $gtotal['TotalGPassYds']; ?></td>
     <td><?php echo $gtotal['TotalGPassTDs']; ?></td>
-    <td><?php echo $gtotal['TotalGPassInt']; ?></td>
+    <td><?php echo $gtotal['TotalGPassInts']; ?></td>
     <td><?php echo $gtotal['TotalGPassRate']; ?></td>
     <td><?php echo $gtotal['TotalGRushAtt']; ?></td>
     <td><?php echo $gtotal['TotalGRushYds']; ?></td>
