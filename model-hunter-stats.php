@@ -2,7 +2,7 @@
 function selectHunterStats() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU FROM GameLog WHERE GLHeismanID=1");
+        $stmt = $conn->prepare("SELECT GLID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs, GLDefTack, GLDefInt, GLDefPBU FROM GameLog WHERE GLHeismanID=1");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
