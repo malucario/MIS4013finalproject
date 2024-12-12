@@ -41,13 +41,13 @@ while ($hgamelog=$hgamelogs->fetch_assoc()) {
     <td><?php echo $hgamelog['GLID']; ?></td>
     <td><?php echo $hgamelog['GLDate']; ?></td>
     <td><?php echo $hgamelog['GLOpponent']; ?></td>
-    <td><?php echo $hgamelog['GLRushAtt'] ?></td>
+    <td><?php echo $hgamelog['GLRushAtt']; ?></td>
     <td><?php echo $hgamelog['GLRushYds']; ?></td>
     <td><?php echo $hgamelog['GLRushAvg']; ?></td>
     <td><?php echo $hgamelog['GLRushTDs']; ?></td>
     <td><?php echo $hgamelog['GLRec']; ?></td>
     <td><?php echo $hgamelog['GLRecYds']; ?></td>
-    <td><?php echo $hgamelog['GLRecAvg'] ?></td>
+    <td><?php echo $hgamelog['GLRecAvg']; ?></td>
     <td><?php echo $hgamelog['GLRecTDs']; ?></td>
     <td><?php echo $hgamelog['GLDefTack']; ?></td>
     <td><?php echo $hgamelog['GLDefInt']; ?></td>
@@ -71,6 +71,52 @@ Include "view-hunter-stats-editform.php";
     </td>
   </tr>
   <?php
+}
+?>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <h4>Total Stats</h4>
+      <tr>
+        <th>RushAtt</th>
+        <th>RushYds</th>
+        <th>RushAvg</th>
+        <th>RushTD</th>
+        <th>Rec</th>
+        <th>RecYds</th>
+        <th>RecAvg</th>
+        <th>RecTD</th>
+        <th>Tackles</th>
+        <th>Ints</th>
+        <th>PBUs</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+<?php
+while ($htotal=$htotals->fetch_assoc()) {
+  ?>
+  <tr>
+    <td><?php echo $htotal['TotalHRushAtt']; ?></td>
+    <td><?php echo $htotal['TotalHRushYds']; ?></td>
+    <td><?php echo $htotal['TotalHRushAvg']; ?></td>
+    <td><?php echo $htotal['TotalHRushTDs']; ?></td>
+    <td><?php echo $htotal['TotalHRec']; ?></td>
+    <td><?php echo $htotal['TotalHRecYds']; ?></td>
+    <td><?php echo $htotal['TotalHRecAvg']; ?></td>
+    <td><?php echo $htotal['TotalHRecTDs']; ?></td>
+    <td><?php echo $htotal['TotalHDefTack']; ?></td>
+    <td><?php echo $htotal['TotalHDefInt']; ?></td>
+    <td><?php echo $htotal['TotalHDefPBU']; ?></td>
+  </tr>
+<?php
 }
 ?>
     </tbody>
