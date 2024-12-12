@@ -27,10 +27,10 @@ function insertGabrielStats($gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsPassYd
     }
 }
 
-function updateGabrielStats($gsPassComps, $gsPassAtt, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs, $gsGLID) {
+function updateGabrielStats($gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs, $gsGLID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE GameLog SET GLPassComps=?, GLPassAtt=?, GLCompPct=?, GLPassTDs=?, GLPassInt=?, GLPassRate=?, GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=? WHERE GLID=?");
+        $stmt = $conn->prepare("UPDATE GameLog SET GLPassComps=?, GLPassAtt=?, GLCompPct=?, GLCompPct, GLPassTDs=?, GLPassInt=?, GLPassRate=?, GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=? WHERE GLID=?");
         $stmt->bind_param("iiiiiiiiiii", $gsPassComps, $gsPassAtt, $gsPassYds, $gsPassTDs, $gsPassInt, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs, $gsGLID); 
         $success = $stmt->execute();
         $conn->close();
