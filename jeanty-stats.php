@@ -23,7 +23,7 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Edit":
-      if (updateJeantyStats($_POST['jsRushAtt'], $_POST['jsRushYds'], $_POST['jsRushAvg'], $_POST['jsRushTDs'], $_POST['jsRec'], $_POST['jsRecYds'], $_POST['jsRecAvg'], $_POST['jsRecTDs'])) {
+      if (updateJeantyStats($_POST['jsRushAtt'], $_POST['jsRushYds'], $_POST['jsRushAvg'], $_POST['jsRushTDs'], $_POST['jsRec'], $_POST['jsRecYds'], $_POST['jsRecAvg'], $_POST['jsRecTDs'], $_POST['jsGLID'])) {
         echo '<div class="alert alert-success" role="alert">Stats edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
