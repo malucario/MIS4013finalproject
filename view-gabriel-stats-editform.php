@@ -21,8 +21,8 @@
             <input type="number" class="form-control" id="gsPassComps<?php echo $ggamelog['GLPassComps'];?>" name="gsPassComps" value="<?php echo $ggamelog['GLPassComps'];?>">
           </div> 
           <div class="mb-3">
-            <label for="gsPassYds<?php echo $ggamelog['GLPassYds'];?>" class="form-label">Passing Attempts</label>
-            <input type="number" class="form-control" id="gsPassYds<?php echo $ggamelog['GLPassYds'];?>" name="gsPassYds" value="<?php echo $ggamelog['GLPassYds'];?>">
+            <label for="gsPassAtt<?php echo $ggamelog['GLPassAtt'];?>" class="form-label">Passing Attempts</label>
+            <input type="number" class="form-control" id="gsPassAtt<?php echo $ggamelog['GLPassAtt'];?>" name="gsPassAtt" value="<?php echo $ggamelog['GLPassAtt'];?>">
           </div> 
           <div class="mb-3">
             <label for="gsCompPct<?php echo $ggamelog['GLCompPct'];?>" class="form-label">Completion %</label>
