@@ -27,7 +27,7 @@ Include "view-header.php"
     <p class="card-text">Jeanty has captivated the college football world with one of the greatest rushing seasons in history. He has already surpassed Jay Ajayi's 2014 Boise State record for single-season rushing yards and is on pace to break Barry Sanders' legendary NCAA record of 2,628 rushing yards set in 1988. Currently, Jeanty has amassed over 2,400 rushing yards and 28 touchdowns, averaging an incredible 8.3 yards per carry. His explosiveness has powered Boise State to an unprecedented level, securing a first-round bye in the playoffs. Jeanty’s dominance on the ground and ability to carry his team in high-pressure situations make him a strong Heisman contender.</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><strong>HT/WT:</strong> 5'9" 215 lbs</li>
+    <li class="list-group-item"><strong>HT/WT:</strong> 5'9", 215 lbs</li>
     <li class="list-group-item"><strong>Position:</strong> RB</li>
     <li class="list-group-item"><strong>School:</strong> Boise State</li>
   </ul>
