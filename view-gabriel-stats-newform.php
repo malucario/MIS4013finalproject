@@ -25,8 +25,8 @@
             <input type="text" class="form-control" id="gsOpp" name="gsOpp">
           </div>
           <div class="mb-3">
-            <label for="gsPassComp" class="form-label">Passing Completions</label>
-            <input type="number" class="form-control" id="gsPassComp" name="gsPassComp">
+            <label for="gsPassComps" class="form-label">Passing Completions</label>
+            <input type="number" class="form-control" id="gsPassComps" name="gsPassComps">
           </div> 
           <div class="mb-3">
             <label for="gsPassAtt" class="form-label">Passing Attempts</label>
