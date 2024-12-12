@@ -94,9 +94,6 @@ Include "view-hunter-stats-editform.php";
         <th>Tackles</th>
         <th>Ints</th>
         <th>PBUs</th>
-        <th></th>
-        <th></th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
