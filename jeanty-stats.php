@@ -33,8 +33,8 @@ if (isset($_POST['actionType'])) {
 }
 
 
-$hgamelogs = selectJeantyStats();
-$htotals = selectJeantyTotalStats();
+$jgamelogs = selectJeantyStats();
+$jtotals = selectJeantyTotalStats();
 include "view-jeanty-stats.php";
 Include "view-footer.php";
 ?>
