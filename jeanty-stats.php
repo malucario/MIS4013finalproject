@@ -9,21 +9,21 @@ Include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertJeantyStats($_POST['ajDate'], $_POST['ajOpp'], $_POST['ajRushAtt'], $_POST['ajRushYds'], $_POST['ajRushAvg'], $_POST['ajRushTDs'], $_POST['ajRec'], $_POST['ajRecYds'], $_POST['ajRecAvg'], $_POST['ajRecTDs'], $_POST['ajDefTack'], $_POST['ajDefInt'], $_POST['ajDefPBU'])) {
+      if (insertJeantyStats($_POST['jsDate'], $_POST['jsOpp'], $_POST['jsRushAtt'], $_POST['jsRushYds'], $_POST['jsRushAvg'], $_POST['jsRushTDs'], $_POST['jsRec'], $_POST['jsRecYds'], $_POST['jsRecAvg'], $_POST['jsRecTDs'], $_POST['jsDefTack'], $_POST['jsDefInt'], $_POST['jsDefPBU'])) {
         echo '<div class="alert alert-success" role="alert">Stats added.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
       break;
     case "Delete":
-      if (deleteJeantyStats($_POST['ajGLID'])) {
+      if (deleteJeantyStats($_POST['jsGLID'])) {
         echo '<div class="alert alert-success" role="alert">Stats deleted.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
       break;
     case "Edit":
-      if (updateJeantyStats($_POST['ajRushAtt'], $_POST['ajRushYds'], $_POST['ajRushAvg'], $_POST['ajRushTDs'], $_POST['ajRec'], $_POST['ajRecYds'], $_POST['ajRecAvg'], $_POST['ajRecTDs'], $_POST['ajDefTack'], $_POST['ajDefInt'], $_POST['ajDefPBU'], $_POST['ajGLID'])) {
+      if (updateJeantyStats($_POST['jsRushAtt'], $_POST['jsRushYds'], $_POST['jsRushAvg'], $_POST['jsRushTDs'], $_POST['jsRec'], $_POST['jsRecYds'], $_POST['jsRecAvg'], $_POST['jsRecTDs'], $_POST['jsDefTack'], $_POST['jsDefInt'], $_POST['jsDefPBU'], $_POST['jsGLID'])) {
         echo '<div class="alert alert-success" role="alert">Stats edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
