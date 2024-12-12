@@ -13,11 +13,11 @@ function selectJeantyStats() {
     }
 }
 
-function insertJeantyStats($ajDate, $ajOpp, $ajRushAtt, $ajRushYds, $ajRushAvg, $ajRushTDs, $ajRec, $ajRecYds, $ajRecAvg, $ajRecTDs) {
+function insertJeantyStats($jsDate, $jsOpp, $jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, GLRec, GLRecYds, GLRecAvg, GLRecTDs) VALUES (2,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-        $stmt->bind_param("ssiiiiiiii", $ajDate, $ajOpp, $ajRushAtt, $ajRushYds, $ajRushAvg, $ajRushTDs, $ajRec, $ajRecYds, $ajRecAvg, $ajRecTDs); 
+        $stmt->bind_param("ssiiiiiiii", $jsDate, $jsOpp, $jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -27,11 +27,11 @@ function insertJeantyStats($ajDate, $ajOpp, $ajRushAtt, $ajRushYds, $ajRushAvg, 
     }
 }
 
-function updateJeantyStats($ajRushAtt, $ajRushYds, $ajRushAvg, $ajRushTDs, $ajRec, $ajRecYds, $ajRecAvg, $ajRecTDs, $ajGLID) {
+function updateJeantyStats($jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs, $jsGLID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE GameLog SET GLRushAtt=?, GLRushYds=?, GLRushAvg=?, GLRushTDs=?, GLRec=?, GLRecYds=?, GLRecAvg=?, GLRecTDs=? WHERE GLID=?");
-        $stmt->bind_param("iiiiiiiii", $ajRushAtt, $ajRushYds, $ajRushAvg, $ajRushTDs, $ajRec, $ajRecYds, $ajRecAvg, $ajRecTDs, $ajGLID); 
+        $stmt->bind_param("iiiiiiiii", $jsRushAtt, $jsRushYds, $jsRushAvg, $jsRushTDs, $jsRec, $jsRecYds, $jsRecAvg, $jsRecTDs, $jsGLID); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -41,11 +41,11 @@ function updateJeantyStats($ajRushAtt, $ajRushYds, $ajRushAvg, $ajRushTDs, $ajRe
     }
 }
 
-function deleteJeantyStats($ajGLID) {
+function deleteJeantyStats($jsGLID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM GameLog WHERE GLID=?");
-        $stmt->bind_param("i",$ajGLID); 
+        $stmt->bind_param("i",$jsGLID); 
         $success = $stmt->execute();
         $conn->close();
         return $success;
