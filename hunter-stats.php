@@ -33,7 +33,7 @@ if (isset($_POST['actionType'])) {
 }
 
 
-$hgamelog = selectHunterStats();
+$hgamelogs = selectHunterStats();
 include "view-hunter-stats.php";
 Include "view-footer.php";
 ?>
