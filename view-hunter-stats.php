@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h1>Travis Hunter Stats</h1>
+    <h1><strong>Travis Hunter Stats</strong></h1>
   </div>
   <div class="col-auto">
 <?php
@@ -11,7 +11,8 @@
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <p>Game Log</p>
+      <h4>Game Log</h4>
+      <p>If you notice anything off with out logs, please update/correct them.</p>
       <tr>
         <th>ID</th>
         <th>Date</th>
