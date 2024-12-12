@@ -52,7 +52,7 @@ Include "view-jeanty-stats-editform.php";
     </td>
     <td>
       <form method="post" action="">
-        <input type="hidden" name="ajGLID" value="<?php echo $jgamelog['GLID']; ?>">
+        <input type="hidden" name="jsGLID" value="<?php echo $jgamelog['GLID']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to delete these stats?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
