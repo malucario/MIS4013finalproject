@@ -44,7 +44,7 @@ function updateHunterStats($hsRushAtt, $hsRushYds, $hsRushAvg, $hsRushTDs, $hsRe
 function deleteHunterStats($hsGLID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM Stats WHERE GLID=?");
+        $stmt = $conn->prepare("DELETE FROM GameLog WHERE GLID=?");
         $stmt->bind_param("i",$hsGLID); 
         $success = $stmt->execute();
         $conn->close();
