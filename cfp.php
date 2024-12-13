@@ -20,6 +20,16 @@ Include "view-header.php";
 <h3><br><br>Below is a visual for the playoff:</h3>
 <img src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2024-12-08/2024CFPBracket.png?itok=xvDi-CKJ" alt="CFP Bracket">
 
+<h3><br><br>The second, third, and fourth round matchups will be played at:</h3>
+<p><strong>Rose Bowl Pres. by Prudential:</strong> #1 Oregon vs. Winner of #8 Ohio State/#9 Tennessee</p>
+<p><strong>Allstate Sugar Bowl:</strong> #2 Georgia vs. Winner of #7 Notre Dame/#10 Indiana</p>
+<p><strong>Vrbo Fiesta Bowl:</strong> #3 Boise State vs. Winner of #6 Penn State/#11 SMU</p>
+<p><strong>Chick-fil-A Peach Bowl:</strong> #4 Arizona State vs. Winner of #5 Texas/#12 Clemson</p>
+<p><br><strong>Goodyear Cotton Bowl Classic:</strong> Winner of Rose Bowl vs. Winner of Peach Bowl</p>
+<p><strong>Capital One Orange Bowl:</strong> Winner of Sugar Bowl vs. Winner of Fiesta Bowl</p>
+<p><br><strong>National Championship:</strong> Winner of Cotton Bowl vs. Winner of Orange Bowl</p>
+
+
 <!--Bracket pic-->
 <?php
 Include "view-footer.php";
