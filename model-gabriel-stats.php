@@ -16,7 +16,7 @@ function selectGabrielStats() {
 function insertGabrielStats($gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $gsPassTDs, $gsPassInts, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLPassComps, GLPassAtt, GLCompPct, GLPassYds, GLPassTDs, GLPassInts, GLPassRate, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs, ) VALUES (3,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt = $conn->prepare("INSERT INTO GameLog (GLHeismanID, GLDate, GLOpponent, GLPassComps, GLPassAtt, GLCompPct, GLPassYds, GLPassTDs, GLPassInts, GLPassRate, GLRushAtt, GLRushYds, GLRushAvg, GLRushTDs) VALUES (3,?,?,?,?,?,?,?,?,?,?,?,?,?)");
         $stmt->bind_param("ssiiiiiiiiiii", $gsDate, $gsOpp, $gsPassComps, $gsPassAtt, $gsCompPct, $gsPassYds, $gsPassTDs, $gsPassInts, $gsPassRate, $gsRushAtt, $gsRushYds, $gsRushAvg, $gsRushTDs); 
         $success = $stmt->execute();
         $conn->close();
