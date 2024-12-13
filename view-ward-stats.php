@@ -100,17 +100,17 @@ Include "view-ward-stats-editform.php";
 while ($wtotal=$wtotals->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $wtotal['TotalGPassComps']; ?></td>
-    <td><?php echo $wtotal['TotalGPassAtt']; ?></td>
-    <td><?php echo $wtotal['TotalGCompPct']; ?></td>
-    <td><?php echo $wtotal['TotalGPassYds']; ?></td>
-    <td><?php echo $wtotal['TotalGPassTDs']; ?></td>
-    <td><?php echo $wtotal['TotalGPassInts']; ?></td>
-    <td><?php echo $wtotal['TotalGPassRate']; ?></td>
-    <td><?php echo $wtotal['TotalGRushAtt']; ?></td>
-    <td><?php echo $wtotal['TotalGRushYds']; ?></td>
-    <td><?php echo $wtotal['TotalGRushAvg']; ?></td>
-    <td><?php echo $wtotal['TotalGRushTDs']; ?></td>
+    <td><?php echo $wtotal['TotalWPassComps']; ?></td>
+    <td><?php echo $wtotal['TotalWPassAtt']; ?></td>
+    <td><?php echo $wtotal['TotalWCompPct']; ?></td>
+    <td><?php echo $wtotal['TotalWPassYds']; ?></td>
+    <td><?php echo $wtotal['TotalWPassTDs']; ?></td>
+    <td><?php echo $wtotal['TotalWPassInts']; ?></td>
+    <td><?php echo $wtotal['TotalWPassRate']; ?></td>
+    <td><?php echo $wtotal['TotalWRushAtt']; ?></td>
+    <td><?php echo $wtotal['TotalWRushYds']; ?></td>
+    <td><?php echo $wtotal['TotalWRushAvg']; ?></td>
+    <td><?php echo $wtotal['TotalWRushTDs']; ?></td>
   </tr>
 <?php
 }
