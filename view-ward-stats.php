@@ -34,7 +34,7 @@
     </thead>
     <tbody>
 <?php
-while ($wgamelog=$wgamelows->fetch_assoc()) {
+while ($wgamelog=$wgamelogs->fetch_assoc()) {
   ?>
   <tr>
     <td><?php echo $wgamelog['GLID']; ?></td>
