@@ -10,5 +10,5 @@ Include "view-bracket.php";
 ?>
 
 <?php
-Include "view-header.php";
+Include "view-footer.php";
 ?>
