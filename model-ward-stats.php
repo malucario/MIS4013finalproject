@@ -58,7 +58,7 @@ function deleteWardStats($wsGLID) {
 function selectWardTotalStats() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT SUM(GLPassComps) AS TotalWPassComps, SUM(GLPassAtt) AS TotalWPassAtt, ROUND((SUM(GLPassComps)/SUM(GLPassAtt))*100) AS TotalWCompPct, SUM(GLPassYds) AS TotalWPassYds, SUM(GLPassTDs) AS TotalWPassTDs, SUM(GLPassInts) AS TotalWPassInts, ROUND(AVG(GLPassRate),1) AS TotalWPassRate, SUM(GLRushAtt) AS TotalWRushAtt, SUM(GLRushYds) AS TotalWRushYds, ROUND(SUM(GLRushYds)/SUM(GLRushAtt),1) AS TotalWRushAvg, SUM(GLRushTDs) AS TotalWRushTDs FROM GameLog WHERE GLHeismanID=3");
+        $stmt = $conn->prepare("SELECT SUM(GLPassComps) AS TotalWPassComps, SUM(GLPassAtt) AS TotalWPassAtt, ROUND((SUM(GLPassComps)/SUM(GLPassAtt))*100) AS TotalWCompPct, SUM(GLPassYds) AS TotalWPassYds, SUM(GLPassTDs) AS TotalWPassTDs, SUM(GLPassInts) AS TotalWPassInts, ROUND(AVG(GLPassRate),1) AS TotalWPassRate, SUM(GLRushAtt) AS TotalWRushAtt, SUM(GLRushYds) AS TotalWRushYds, ROUND(SUM(GLRushYds)/SUM(GLRushAtt),1) AS TotalWRushAvg, SUM(GLRushTDs) AS TotalWRushTDs FROM GameLog WHERE GLHeismanID=4");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
