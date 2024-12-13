@@ -33,8 +33,8 @@ if (isset($_POST['actionType'])) {
 }
 
 
-$ggamelows = selectWardStats();
-$gtotals = selectWardTotalStats();
+$wgamelogs = selectWardStats();
+$wtotals = selectWardTotalStats();
 include "view-ward-stats.php";
 Include "view-footer.php";
 ?>
